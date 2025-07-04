@@ -1,0 +1,479 @@
+version: 2
+updates:
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/api"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/charts/test"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/cni-plugin"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/crypto"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/e2e"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/felix/check-licenses"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/hack/test/spider"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/hack/release"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/kube-controllers/tests"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/libcalico-go"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/node/tests/k8st"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/node/windows-packaging/tests"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gomod"
+    directory: "/typha/check-licenses"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      gomod-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/apiserver"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/app-policy"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/calicoctl"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/cni-plugin"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/confd"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/felix/docker-image"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/hack/postrelease"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/kube-controllers"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/kube-controllers/docker-image/flannel-migration"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/libcalico-go"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/networking-calico"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/node"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/node/calico_test"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/node/windows-packaging"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/node/workload"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/pod2daemon/csidriver"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/pod2daemon/flexvol/docker-image"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/pod2daemon/node-driver-registrar-docker"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/pod2daemon/nodeagent/docker"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "docker"
+    directory: "/typha/docker-image"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    registries:
+      - jfrog
+    groups:
+      docker-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "pip"
+    directory: "/hack/postrelease"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      pip-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "pip"
+    directory: "/networking-calico"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      pip-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "pip"
+    directory: "/node/calico_test"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      pip-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    pull-request-branch-name:
+      separator: "-"
+    groups:
+      github-actions-dependencies:
+        patterns:
+          - "*"
+
+registries:
+  jfrog:
+    type: docker-registry
+    url: jfrog.ais.acquia.io
+    username: github_dependabot_token
+    password: ${{secrets.JFROG_GITHUB_DEPENDABOT_TOKEN}}
