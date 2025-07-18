@@ -1,6 +1,6 @@
 module github.com/projectcalico/calico
 
-go 1.21
+go 1.23.0
 
 require (
 	github.com/BurntSushi/toml v1.3.2
@@ -104,8 +104,7 @@ require (
 )
 
 require (
-	cloud.google.com/go/compute v1.23.3 // indirect
-	cloud.google.com/go/compute/metadata v0.2.3 // indirect
+	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	github.com/Azure/azure-sdk-for-go v55.0.0+incompatible // indirect
 	github.com/Azure/go-autorest v14.2.0+incompatible // indirect
 	github.com/Azure/go-autorest/autorest v0.11.27 // indirect
@@ -260,7 +259,7 @@ require (
 	go.uber.org/zap v1.21.0 // indirect
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
 	golang.org/x/mod v0.12.0 // indirect
-	golang.org/x/oauth2 v0.15.0 // indirect
+	golang.org/x/oauth2 v0.27.0 // indirect
 	golang.org/x/term v0.15.0 // indirect
 	golang.org/x/tools v0.13.0 // indirect
 	golang.zx2c4.com/wireguard v0.0.20200121 // indirect
